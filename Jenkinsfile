@@ -24,7 +24,7 @@ node {
 
   stage('DockerPush') {
           withCredentials([string(credentialsId: 'Dockerhub-Credentials', variable: 'Dockerhub-Credentials')]) {
-           sh 'docker login -u depuis2031 -p ${Dockerhub-Credentials}'
+           sh 'docker login -u Depuis2031 -p ${Dockerhub-Credentials}'
 }    
     sh "docker push depuis2031/java-web-app:1"
   }
