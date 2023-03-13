@@ -1,4 +1,4 @@
-/*node {
+node {
 
   def mavenHome = tool name: 'maven3.9.0'
   
@@ -19,17 +19,14 @@
   }
 
   stage('BuildDockerImage') {
-    sh "docker build -t isaacoluwade/spring-boot-mongo:v2 ."
+    sh "docker build -t depuis2031/java-web-app:1 ."
   }
 
   stage('DockerPush') {
-
-    withCredentials([string(credentialsId: 'DockerHubCredentials', variable: 'DockerHubCredentials')]) {
-        sh "docker login -u isaacoluwade -p ${DockerHubCredentials}"
+          withCredentials([string(credentialsId: 'dockerhub-cred', variable: 'Docker-Cred')]) {
+           sh "docker login -u depuis2031 -p ${'Docker-Cred'}"
 }    
-
-
-    sh "docker push isaacoluwade/spring-boot-mongo:v2"
+    sh "docker push depuis2031/java-web-app:1"
   }
   
   stage('RemoveDockerImages'){
@@ -37,13 +34,13 @@
     sh 'docker rmi $(docker images -q)'
   }
  
-  stage('deployToKubenetes'){
+/*  stage('deployToKubenetes'){
 
      sh "kubectl apply -f springapp.yml "
   }
 }*/
 
-pipeline{
+/*ipeline{
   agent any 
   tools {
     maven "maven3.9.0"
@@ -70,7 +67,7 @@ pipeline{
       }
      stage('DockerPush') {
        steps{
-         withCredentials([string(credentialsId: 'dockerhub-cred', variable: 'Docker-Cred')]) {
+           withCredentials([string(credentialsId: 'dockerhub-cred', variable: 'Docker-Cred')]) {
            sh "docker login -u depuis2031 -p ${'Docker-Cred'}"
          }
            sh "docker push depuis2031/java-web-app:1" 
