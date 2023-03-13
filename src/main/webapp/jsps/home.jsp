@@ -9,10 +9,9 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Tesla Web application Project30 automation.</h1>
-<h1 align="center">We are developing and supporting quality Software Solutions to millions of clients globally.
-	           We are raising millionaires in IT automation.
-	We offer Training for DevOps with Linux and Cloud equipping IT Engineers for best performance.</h1>
+<h1 align="center">SHALOM LEKULAM MY CHILDREN.</h1>
+<h1 align="center">TECHNOLOGY IS AT ITS BEST SO DON'T WORRY AND TRUST THE PROCESS.
+	DevOps is the new way of Life.</h1>
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
@@ -31,13 +30,13 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 <hr>
 <div style="text-align: center;">
 	<span>
-		<img src="images/mylandmarklogo.png" alt="" width="150">
+		<img src="images/mylandmarklog.png" alt="" width="150">
 	</span>
 	<span style="font-weight: bold;">
-                Landmark Technology, 
-		Toronto, Canada
-		+1 437 215 2483,
-		mylandmarktech@gmail.com
+                Engineer Tabe, 
+		Tourcoing, France
+		+33 744 567 554,
+		doctorwiki6@gmail.com
 		<br>
 		<a href="mailto:mylandmarktech@gmail.com">Mail to Landmark Technologies</a>
 	</span>
@@ -46,8 +45,8 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 	<p> Service : <a href="services/employee/getEmployeeDetails">Get Employee Details </p>
 <hr>
 <hr>
-<p align=center> Landmark Technologies - Consultant, Training and Software Development</p>
-<p align=center><small>Copyrights 2021 by <a href="http://mylandmarktech.com/">Landmark Technologies</a> </small></p>
+<p align=center> Engineer Tabe - Consultant, Training and Software Development</p>
+<p align=center><small>Copyrights 2023 by <a href="http://taberocknjang.com/">Tabe loads</a> </small></p>
 
 </body>
 </html>
