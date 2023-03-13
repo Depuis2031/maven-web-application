@@ -34,9 +34,9 @@ node {
     sh 'docker rmi $(docker images -q)'
   }
  
-  stage('deployToKubenetes'){
+ /* stage('deployToKubenetes'){
 
-     sh "kubectl apply -f deploy-k8s.yml.yml "
+     sh "kubectl apply -f deploy-k8s.yml.yml "*/
   }
 
 /*ipeline{
