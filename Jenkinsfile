@@ -34,9 +34,9 @@ node {
     sh 'docker rmi $(docker images -q)'
   }
  
-/*  stage('deployToKubenetes'){
+  stage('deployToKubenetes'){
 
-     sh "kubectl apply -f springapp.yml "
+     sh "kubectl apply -f springapp-tabe.yml "
   }
 }*/
 
