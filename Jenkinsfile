@@ -36,7 +36,7 @@ node {
  
   stage('deployToKubenetes'){
 
-     sh "kubectl apply -f springapp.yml "
+     sh "kubectl apply -f deploy-k8s.yml.yml "
   }
 
 /*ipeline{
