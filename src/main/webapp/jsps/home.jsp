@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>LandmarkTechnologies- Home Page</title>
-<link href="images/mylandmarklogo.png" rel="icon">
+<link href="images/mylogo.png" rel="icon">
 </head>
 </head>
 <body>
@@ -30,7 +30,7 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 <hr>
 <div style="text-align: center;">
 	<span>
-		<img src="images/mylandmarklog.png" alt="" width="150">
+		<img src="images/mymarklogo.png" alt="" width="150">
 	</span>
 	<span style="font-weight: bold;">
                 Engineer Tabe, 
