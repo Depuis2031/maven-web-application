@@ -25,8 +25,8 @@ node {
   stage('DockerPush') {
          /* withCredentials([string(credentialsId: 'Dockerhub-Credentials', variable: 'Dockerhub-Credentials')]) {*/
          
-    sh 'docker login -u depuis2031 -p  abeland2031         
-    sh "docker push depuis2031/java-web-app:1"
+       sh 'docker login -u depuis2031 -p  abeland2031         
+       sh 'docker push depuis2031/java-web-app:1'
   }
   
   stage('RemoveDockerImages'){
