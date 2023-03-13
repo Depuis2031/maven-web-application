@@ -71,17 +71,14 @@ pipeline{
      stage('DockerPush') {
        steps{
          withCredentials([usernameColonPassword(credentialsId: 'docker-Cred', variable: 'doker-Cred')]) {
-    // some block
-}
-       sh "docker push depuis2031/java-web-app:1 
-       }  
-       
-        
-  stage('RemoveDockerImages'){
-    steps:{
-    sh 'docker rmi $(docker images -q)'
-  }
-  }     
+          sh "docker push depuis2031/java-web-app:1 
+        }  
+       }
+      stage('RemoveDockerImages'){
+          steps{
+           sh 'docker rmi $(docker images -q)'
+      }
+    }     
     /*
     stage('4CodeQuality'){
       steps{
