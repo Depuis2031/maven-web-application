@@ -64,9 +64,24 @@ pipeline{
     }
      stage('BuildDockerImage') {
        steps{
-        sh "docker build -t depuis2031/java-web-app  ."
-    }
+        sh "docker build -t depuis2031/java-web-app:1  ."
+    
+       }
       }
+     stage('DockerPush') {
+       steps{
+         withCredentials([usernameColonPassword(credentialsId: 'docker-Cred', variable: 'doker-Cred')]) {
+    // some block
+}
+       sh "docker push depuis2031/java-web-app:1 
+       }  
+       
+        
+  stage('RemoveDockerImages'){
+
+    sh 'docker rmi $(docker images -q)'
+  }
+       
     /*
     stage('4CodeQuality'){
       steps{
