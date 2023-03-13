@@ -3,7 +3,7 @@ node {
   def mavenHome = tool name: 'maven3.9.0'
   
   stage('SCM Clone') {
-    git branch: 'main', url: 'https://github.com/Depuis2031/maven-web-application.git'
+    git branch: 'master', url: 'https://github.com/Depuis2031/maven-web-application.git'
   }
 
   stage('MavenBuild') {
