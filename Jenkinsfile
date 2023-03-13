@@ -78,10 +78,10 @@ pipeline{
        
         
   stage('RemoveDockerImages'){
-
+    steps:{
     sh 'docker rmi $(docker images -q)'
   }
-       
+  }     
     /*
     stage('4CodeQuality'){
       steps{
