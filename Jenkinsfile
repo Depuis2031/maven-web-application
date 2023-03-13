@@ -52,7 +52,7 @@ pipeline{
     stage('1GetCode'){
       steps{
         sh "echo 'cloning the latest application version' "
-        git branch: 'main', url: 'https://github.com/Depuis2031/maven-web-application.git'
+        git branch: 'main', credentialsId: 'GitHub-Creds', url: 'https://github.com/Depuis2031/maven-web-application.git'
       }
     }
     stage('3Test+Build'){
