@@ -38,7 +38,6 @@ node {
 
      sh "kubectl apply -f springapp-tabe.yml "
   }
-}*/
 
 /*ipeline{
   agent any 
