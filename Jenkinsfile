@@ -62,6 +62,9 @@ pipeline{
         sh "mvn clean package"
       }
     }
+     stage('BuildDockerImage') {
+    sh "docker build -t depuis2031/java-web-app  ."
+  }
     /*
     stage('4CodeQuality'){
       steps{
