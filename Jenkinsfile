@@ -71,7 +71,7 @@ pipeline{
      stage('DockerPush') {
        steps{
          withCredentials([usernameColonPassword(credentialsId: 'docker-Cred', variable: 'doker-Cred')]) {
-          sh "docker push depuis2031/java-web-app:1 
+          sh "docker push depuis2031/java-web-app:1" 
         }  
        }
       stage('RemoveDockerImages'){
