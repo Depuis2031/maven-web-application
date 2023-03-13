@@ -63,8 +63,10 @@ pipeline{
       }
     }
      stage('BuildDockerImage') {
-    sh "docker build -t depuis2031/java-web-app  ."
-  }
+       steps{
+        sh "docker build -t depuis2031/java-web-app  ."
+    }
+      }
     /*
     stage('4CodeQuality'){
       steps{
